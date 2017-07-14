@@ -9,7 +9,9 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
     
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -71,35 +73,36 @@
             <h2>ПРОИЗВОДСТВЕННОЕ ОБЪЕДИНЕНИЕ СЕТЬ ИСЕТЬ</h2>
             <div class="line"></div>
           </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-xs-12 col-sm-6 col-md-6">
+          <div class="preim clients">
+            <img src="img/icon clients.png" alt="">
+            <p><span>3000</span><br>довольных клиентов</p>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-lg-3 col-xs-12 col-sm-6 col-md-6">
-            <div class="preim clients">
-              <img src="img/icon clients.png" alt="">
-              <p><span>3000</span><br>довольных клиентов</p>
-            </div>
+        <div class="col-lg-3  col-xs-12 col-sm-6 col-md-6">
+          <div class="preim card">
+            <img src="img/card.png" alt="">
+            <p><span>2000 m<sup>2</sup></span><br>склад готовой продукции</p>
           </div>
-          <div class="col-lg-3  col-xs-12 col-sm-6 col-md-6">
-            <div class="preim card">
-              <img src="img/card.png" alt="">
-              <p><span>2000 m<sup>2</sup></span><br>склад готовой продукции</p>
-            </div>
+        </div>
+         <div class="col-lg-3 col-xs-12 col-sm-6 col-md-6">
+          <div class="preim nastr">
+            <img src="img/nastr.png" alt="">
+            <p>Собственные<br>производственные<br>мощности</p>
           </div>
-          <div class="col-lg-3 col-xs-12 col-sm-6 col-md-6">
-            <div class="preim nastr">
-              <img src="img/nastr.png" alt="">
-              <p>Собственные<br>производственные<br>мощности</p>
-            </div>
+        </div>
+         <div class="col-lg-3 col-xs-12 col-sm-6 col-md-6">
+          <div class="preim market">
+            <img src="img/market.png" alt="">
+            <p><span>4 года</span><br>на рынке</p>
           </div>
-          <div class="col-lg-3 col-xs-12 col-sm-6 col-md-6">
-            <div class="preim market">
-              <img src="img/market.png" alt="">
-              <p><span>4 года</span><br>на рынке</p>
-            </div>
-          </div>
-        </div> 
-      </div>      
+        </div>
+      </div> 
+      
     </section>
+
     <section id="proizvodstvo">
       <div class="container">
         <div class="row">
@@ -601,16 +604,15 @@
               <input id="userName" type="text" name="username" placeholder="Ваше имя...">
               <input id="userEmail" type="email" name="useremail" placeholder="Ваш e-mail...">                     
               <button id="submit-form" class="form-btn" type="submit" data-toggle="modal" data-target="#otvet">Оставить заявку</button>
-          </form>
           <a class="popup-close" href="#close">&times;</a>
         </div>
       </div>
       
                
-      <div class="modal fade" id="otvet" data-backdrop="true" tabindex="-1" role="dialog" aria-labelledby="popup-1">
+<div class="modal fade" id="otvet" data-backdrop="true" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-sm" role="document">
           <div class="modal-content">
-            <div class="modal-header text-center">
+            <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <h4>Ваша заявка отправлена</h4>
               <p>Мы скоро Вам перезвоним</p>
@@ -619,9 +621,6 @@
         </div>        
       </div>  
 
-     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/wow.min.js"></script>
