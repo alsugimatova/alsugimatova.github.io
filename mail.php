@@ -1,7 +1,7 @@
 <?php 
 //Принимаем постовые данные
-$username=$_POST['username'];
-$email=$_POST['email'];
+$userName=$_POST['userName'];
+$useEmail=$_POST['userEmail'];
 $user_message=$_POST['user_message'];
 //Тут указываем на какой ящик посылать письмо
 $to = "daalsu@yandex.ru";
@@ -10,8 +10,8 @@ $to = "daalsu@yandex.ru";
 $subject = "Заявка";
 // Сообщение письма
 $message = "
-Имя пользователя: ".htmlspecialchars($username)."<br />
-Email: ".htmlspecialchars($email)."<br />
+Имя пользователя: ".htmlspecialchars($userName)."<br />
+Email: ".htmlspecialchars($userEmail)."<br />
 Сообщение: ".htmlspecialchars($user_message);
 
 // Отправляем письмо при помощи функции mail();
