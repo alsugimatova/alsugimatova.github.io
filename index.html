@@ -601,12 +601,13 @@
               <input id="userName" type="text" name="username" placeholder="Ваше имя...">
               <input id="userEmail" type="email" name="useremail" placeholder="Ваш e-mail...">                     
               <button id="submit-form" class="form-btn" type="submit" data-toggle="modal" data-target="#otvet">Оставить заявку</button>
+          </form>
           <a class="popup-close" href="#close">&times;</a>
         </div>
       </div>
       
                
-<div class="modal fade" id="otvet" data-backdrop="true" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade text-center" id="otvet" data-backdrop="true" tabindex="-1" role="dialog" aria-labelledby="otvet">
         <div class="modal-dialog modal-sm" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -634,7 +635,7 @@
             data: $(this).serialize()
           }).done(function() {
             $(this).find("input").val("");
-            $('#main-form-ajax').form('hide');
+            $('#main-form-ajax').popup('hide');
             $("#otvet").modal('show');
             $('#main-form-ajax').trigger("reset");
           });
