@@ -432,10 +432,7 @@
           </div>
         </div>
       </div>
-    </section>  
-          
-        
-
+    </section>
       
       <section id="fiting">
         <div class="container">
@@ -637,6 +634,7 @@
             data: $(this).serialize()
           }).done(function() {
             $(this).find("input").val("");
+            $('#main-form-ajax').form('hide');
             $("#otvet").modal('show');
             $('#main-form-ajax').trigger("reset");
           });
