@@ -635,7 +635,7 @@
             data: $(this).serialize()
           }).done(function() {
             $(this).find("input").val("");
-            $('#main-form-ajax').popup('hide');
+            $('#main-form-ajax').modal('hide');
             $("#otvet").modal('show');
             $('#main-form-ajax').trigger("reset");
           });
