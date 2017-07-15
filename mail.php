@@ -15,7 +15,7 @@ Email: ".htmlspecialchars($email)."<br />
 Сообщение: ".htmlspecialchars($user_message);
 
 // Отправляем письмо при помощи функции mail();
-$headers = "From: setiset.sl <putin@setiset.sl>\r\nContent-type: text/html; charset=UTF-8 \r\n";
+$headers = "From: alsugimatova.github.io \r\nContent-type: text/html; charset=UTF-8 \r\n";
 mail ($to, $subject, $message, $headers);
 // Перенаправляем человека на страницу благодарности и завершаем скрипт
 header('Location: thanks.html');
