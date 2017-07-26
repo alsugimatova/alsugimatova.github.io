@@ -42,12 +42,14 @@ header {
 	background-color: #fff;
 	width: 100%;
 	z-index: 80;
-
+	height: 180px;
 }
 
 #menu {
 
-	
+	position: absolute;
+	display: inline-block;
+
 
 	
 	 nav {
@@ -55,6 +57,7 @@ header {
 		font-family: 'PFDinTextCompProMedium_0', sans-serif;
 		font-size: 16px;
 		color: #333333;
+		position: relative;
 
 	    }
 	nav li {  
@@ -90,7 +93,7 @@ header {
 		i {
 			color: #6699cc;
 			font-size: 18px;
-			padding-left: 10px;
+			
 		}
 		p {
 			display: inline;
@@ -98,25 +101,37 @@ header {
 			font-family: 'PFDinTextCompProLight_0', sans-serif;
 		    font-size: 20px;
 		    color: #333333;
+		    padding-right: 20px;
+
+		}
+		ul {
+			list-style: none;
+			margin-left: -70px;
+			i {
+				margin-right: 5px;
+			}
 		}
 	} 
 
 	
 	&-ban {
 		ul {
-        list-style-image: url('../img/main-icon.png');
+        list-style: none;
         padding-top: 30px;
-          li {
-      	  
+        display: table;
+          li {      	  
       	  font-family: 'PFDinTextCompProThin', sans-serif;
       	  font-size: 22px;
       	  padding-top: 10px;
       	  -webkit-transition: all 0.3s ease;
       	  -o-transition: all 0.3s ease;
       	  transition: all 0.3s ease;
+      	  background: url('../img/main-icon.png') no-repeat 0 0.5em;
+          padding-left: 35px;              
+
       	  &:hover {
-      	  	padding-left: 10px;
-      	  }
+      	  	padding-left: 45px;
+          }
           }
 	    }
 	    h1 {
@@ -142,10 +157,13 @@ header {
 		font-family: 'PFDinTextCompProBold_0', sans-serif;
 		font-size: 22px;
 		box-shadow: 0px 7px 13px 0px rgba(30, 101, 172, 0.38);
-			
-
+		-webkit-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+		outline: none;
+		border: none;
 			&:hover {
-				
+				box-shadow: 0px 7px 13px 0px rgba(30, 101, 172, 0.6);
 			}
 	}
 }	
@@ -153,10 +171,13 @@ header {
 	padding-top: 7%;
 }
 .main-phone {
-	padding-top: 5px;	
+	padding-top: 5px;
+
 }
 .main-email {
 	padding-top: 4px;
+
+	
 	
 }
 
@@ -196,7 +217,7 @@ header {
 	padding-bottom: 7%;
 
 	img {
-		padding-top: 100px;
+		padding-top: 70px;
 	}
 	p {
 		font-family: 'PFDinTextCompProLight_0', sans-serif;
@@ -216,20 +237,30 @@ header {
 		height: 300px;
 		&:hover {
 			background-color: #ffffff;
+			box-shadow: 0px 0px 32px 0px rgba(51, 51, 51, 0.1);
 		}
 	}
 }
 #proizvodstvo {
 	background: #f8f8f8 url(../img/bgc2.png) no-repeat center; 
 	padding-bottom: 7%;
-	ul { list-style-image: url('../img/main-icon.png');
+	ul { list-style: none;
+	display: table;
+	
 	  li {
 	  	 padding-top: 8px;
-      	  -webkit-transition: all 0.3s ease;
-      	  -o-transition: all 0.3s ease;
-      	  transition: all 0.3s ease;
+      	  -webkit-transition: all 0.3s;
+      	  -o-transition: all 0.3s;
+      	  transition: all 0.3s;
+      	  font-family: 'PFDinTextCompProLight_0', sans-serif;
+          color:  #333333;
+          font-size: 22px;
+          background: url('../img/main-icon.png') no-repeat 0 0.5em;
+          padding-left: 35px;
+                
+
       	  &:hover {
-      	  	padding-left: 10px;
+      	  	padding-left: 45px;
       	  }
 	  }
 	}
@@ -254,6 +285,14 @@ header {
 		font-family: 'PFDinTextCompProBold_0', sans-serif;
 		font-size: 22px;
 		box-shadow: 0px 7px 13px 0px rgba(30, 101, 172, 0.38);
+		-webkit-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+		outline: none;
+		border: none;
+			&:hover {
+				box-shadow: 0px 7px 13px 0px rgba(30, 101, 172, 0.6);
+			}
 	}
 	.box {
 		
@@ -276,10 +315,16 @@ header {
 		}
 		p {
 			display: inline;
-			vertical-align: -10px;
-			padding-left: 20px;
+			vertical-align: -15px;
+			padding-left: 10px;
 			font-family: 'PFDinTextCompProLight_0', sans-serif;
 		    font-size: 20px;
+		    -webkit-transition: all 0.3s;
+		    -o-transition: all 0.3s;
+		    transition: all 0.3s;
+		    &:hover {
+		    	padding-left: 20px;
+		    }
 		}
 		&:hover {		
 		box-shadow: 0px 0px 32px 0px rgba(51, 51, 51, 0.1);
@@ -288,6 +333,8 @@ header {
 	}
 
 }
+
+
 
 #trubi {
 	background-color: #f9f9f9;
@@ -382,7 +429,6 @@ header {
 .box-price {
 	background-color: #f9f9f9;
 	button {
-
 		background-color: #669acd;
 		border: none;
 		padding: 15px 80px;
@@ -396,6 +442,14 @@ header {
 		font-family: 'PFDinTextCompProBold_0', sans-serif;
 		font-size: 22px;
 		box-shadow: 0px 7px 13px 0px rgba(30, 101, 172, 0.38);
+		-webkit-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+		outline: none;
+		border: none;
+			&:hover {
+				box-shadow: 0px 7px 13px 0px rgba(30, 101, 172, 0.6);
+			}
 	}
 	padding-top: 7%;
 	padding-bottom: 10%;
@@ -437,7 +491,7 @@ header {
 }
 .fiting-box {
 	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-bottom: 50px;
 	height: 300px;
 	background-color: #ffffff;
 	-webkit-transition: all 0.3s;
@@ -448,6 +502,7 @@ header {
 	}
 	
 	h4 {
+
 		margin-left: 20px;
 		display: inline;
 		font-family: 'PFDinTextCompProMedium_0', sans-serif;
@@ -457,6 +512,14 @@ header {
 		margin-left: 68px;
 		font-family: 'PFDinTextCompProLight_0', sans-serif;
 		font-size: 20px;
+		-webkit-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+		padding-right: 40px;
+
+		&:hover {
+			padding-left: 10px;
+		}
 
 	}
 	&:hover {
@@ -507,6 +570,7 @@ header {
 	padding-bottom: 6%;
 	h4 {
 		margin-top: 20%;
+		margin-bottom: 2%;
 		margin-left: -50px;
 		font-family: 'PFDinTextCompProLight_0', sans-serif;
 		font-size: 18px;
@@ -545,12 +609,13 @@ header {
 		font-size: 15px;
 		font-family: 'PFDinTextCompProLight_0', sans-serif;
 		font-size: 18px;
-		color: #999999;
+		color: #999999;		
 		&:focus {
 		outline: none;
 	}
     }
     textarea {
+    	padding-top: 13px;
 		padding-left: 20px;
 		width: 270px;
 		height: 105px;
@@ -585,6 +650,24 @@ header {
 		font-family: 'PFDinTextCompProMedium_0', sans-serif;
 		font-size: 16px;
 		box-shadow: 0px 7px 13px 0px rgba(30, 101, 172, 0.38);
+		-webkit-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+		outline: none;
+		border: none;
+			&:hover {
+				box-shadow: 0px 7px 13px 0px rgba(30, 101, 172, 0.6);
+			}
+
+	}
+	a {
+		font-family: 'PFDinTextCompProLight_0', sans-serif;
+		font-size: 18px;
+		color: #ffffff;
+		text-decoration: underline;		
+		&:hover {
+			color: #6699cc;
+		}
 	}
 }
 
@@ -605,10 +688,13 @@ header {
 			margin-top: 50px;
 		}
 
+
+
 #modal-1 {
 	margin-top: 100px;
 	
 }
+
 .modal-content {
 	width: 360px;
 	height: 370px;
@@ -616,17 +702,17 @@ header {
 	position: fixed;
 	top: 25%;
 	margin-left: 15%;
-	padding-top: 3%;
-	
+	padding-top: 3%;	
 	text-align: center;
 	h4 {
+		padding-top: 30px;
 		font-family: 'PFDinTextCompProBold_0', sans-serif;
 		font-size: 22px;
 		color: #333333;
 	}
 	p {
 		font-family: 'PFDinTextCompProLight_0', sans-serif;
-		font-size: 18px;
+		font-size: 16px;
 		color: #333333;
 		
 	}
@@ -636,31 +722,25 @@ header {
 		position: absolute;
 		top: -20px;
 		right: -20px;
-
-
 		&:hover, &:focus, &:visited, &:active {
 			text-decoration: none;
 			color: #acacac;
-		}
-		
-	}
-	
+		}		
+	}	
 }
 .modal-header {
 	border: 0;
 }
-.modal-footer {
+.modal-body {
 	border: 0;
-	padding-top: 10px;
-	padding-bottom: 105px;
-
-
+	
+	width: 360px;
+	height: 370px;
 	button {
-		margin-right: 28px;
-
+		
     	height: 50px;
     	width: 270px;
-    	margin-top: -40px;
+    	margin-top: 12px;
 		background-color: #669acd;
 		border: none;
 		padding: 11px 80px;
@@ -672,20 +752,34 @@ header {
 		color: #ffffff;		
 		font-family: 'PFDinTextCompProMedium_0', sans-serif;
 		font-size: 16px;
-
 		box-shadow: 0px 7px 13px 0px rgba(30, 101, 172, 0.38);
+		&:hover {
+			box-shadow: 0px 7px 13px 0px rgba(30, 101, 172, 0.6);
+		}
 	    }
 }
 .modal-body {
+	background-color: #f8f8f8;
 	margin-top: -20px;
+	-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
 	form {
-		padding-top: 3%;
+		padding-top: 5%;
+		input:-webkit-autofill, select:-webkit-autofill {
+    background-color: rgb(255, 255, 255) !important;
+    background-image: none;
+    color: #333333;
+}
 		input {	
-
+		
 		padding-left: 20px;
 		width: 270px;
 		height: 50px;
 		border: none;
+		background-color: #fff;
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
 		-ms-border-radius: 5px;
@@ -694,14 +788,18 @@ header {
 		margin-top: 10px;
 		font-size: 15px;
 		font-family: 'PFDinTextCompProLight_0', sans-serif;
-		font-size: 18px;
-		color: #999999;
+		font-size: 16px;
+		color: #333333;
 		&:focus {
 		  outline: none;
+	    }
+	    &:hover {
+	      box-shadow: 0px 7px 13px 0px rgba(51, 51, 51, 0.1);
 	    }
 	    }	    
     }
 }
+
 #otvet {
 	margin-top: 150px;
 	margin-left: -150px;
@@ -750,7 +848,13 @@ header {
 
 
 @media (min-width: 0px) and (max-width: 480px) {
+	header {
+		height: 300px;
+	}
 	
+	#modal-1 {
+		margin-left: -60px;
+	}
     #menu {
 		nav {
 			ul li {
@@ -783,6 +887,12 @@ header {
 			    color: #333333;
 			}
 		}
+		&-phone {
+			margin-left: 20px;
+		}
+		&-email {
+			margin-left: -40px;
+		}
     }
 	.section-header {
 	margin-top: 3%;
@@ -811,7 +921,7 @@ header {
 		color: #333333;
 		}
 	}
-	#proizvodstvo {
+	#proizvodstvo {		
 		.box {
 		h3 {			
 			padding-left: 15px;			
@@ -882,7 +992,11 @@ header {
 
 
 @media (min-width: 481px) and (max-width: 767px) {
-	.logo {
+	header {
+		height: 300px;
+	}
+	
+	.logo {		
 		margin-left: 30%;
 	}
 	#menu {
@@ -913,6 +1027,12 @@ header {
 			    font-size: 13px;
 			    color: #333333;
 			}
+		}
+		&-phone {
+			margin-left: 30px;
+		}
+		&-email {
+			margin-left: -50px;
 		}
     }
 	.section-header {
@@ -998,6 +1118,9 @@ header {
 	
 	
 @media (min-width: 768px) and (max-width: 991px) {
+	header {
+		height: 300px;
+	}
 	#menu {
 		nav {
 			ul li {
@@ -1015,6 +1138,7 @@ header {
 		color: #333333;
 		}
 	}
+
 	
 	#footer {
 		h4 {
@@ -1044,6 +1168,13 @@ header {
 
 	
 @media (min-width: 992px) and (max-width: 1199px) {
+	header {
+		height: 250px;
+
+	}
+	#main {
+		padding-top: 200px;
+	}
 	.fiting-box {	
 	h4 {
 		margin-left: 20px;

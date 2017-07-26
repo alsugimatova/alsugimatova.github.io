@@ -4,7 +4,7 @@ $userName=$_POST['userName'];
 $useEmail=$_POST['userEmail'];
 $user_message=$_POST['user_message'];
 //Тут указываем на какой ящик посылать письмо
-$to = "daalsu@yandex.ru";
+$to = "alsugimatova@yandex.ru";
 //Далее идет тема и само сообщение
 // Тема письма
 $subject = "Заявка";

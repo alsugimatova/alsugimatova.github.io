@@ -28,7 +28,7 @@
       <div class="container">
         <div class="row main-head">
           <div class="col-md-2 col-sm-12 col-xs-12 main-logo">
-            <img class="img-responsive logo" src="img/logo.png" alt="Логотип Сеть-Исеть">
+            <a href="http://alsugimatova.github.io"> <img class="img-responsive logo" src="img/logo.png" alt="Логотип Сеть-Исеть"></a>           
           </div>
           <div class="col-lg-6 col-md-10 col-xs-12 main-nav">
             <nav class="clearfix">
@@ -42,11 +42,17 @@
             </nav>  
           </div>
           <div class="col-md-2 col-sm-12 col-xs-6 main-contacts main-phone">
-             <i class="fa fa-phone"></i>
-            <a href="tel:(343)344-85-85">(343)344-85-85</a>            
+             <ul>
+             <li><i class="fa fa-phone"></i>
+            <a href="tel:(343)344-85-85">(343)344-85-85</a>
+            </li>
+            </ul>            
           </div>
           <div class="col-md-2 col-sm-12 col-xs-6 main-contacts main-email">
-            <p> <i class="fa fa-envelope"></i>      set-iset@set-iset.ru</p>
+          <ul>
+          <li>
+            <i class="fa fa-envelope"></i><p>  set-iset@set-iset.ru</p>
+            </li></ul>
           </div>
         </div>
       </div>
@@ -135,7 +141,7 @@
             <h3>СКЛАД В ЕКАТЕРИНБУРГЕ</h3>
             <img src="img/ekb1.png" alt="Иконка1">
             <p>Труба от 16 до 225 диаметра в наличии</p><br>
-            <img src="img/ekb2.png" alt="Иконка2">
+            <img class="sklad"src="img/ekb2.png" alt="Иконка2">
             <p>2000m<sup>2</sup> складской площади</p><br>
             <img src="img/ekb3.png" alt="Иконка3">
             <p>Удобное расположение рядом с ЕКАД</p><br>
@@ -146,7 +152,7 @@
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="box wow fadeInUp msk" data-wow-duration="2s">
             <h3>СКЛАД В МОСКВЕ</h3>
-            <img src="img/ekb1.png" alt="Иконка1">
+            <img class="card" src="img/ekb1.png" alt="Иконка1">
             <p>Труба самых популярных диаметров в наличии</p><br>
             <img src="img/ekb3.png" alt="Иконка3">
             <p>5 км от МКАД, удобная развязка</p><br>
@@ -585,7 +591,10 @@
             <textarea name="user_message" placeholder="Ваш вопрос" rows="3"></textarea>
             <button id="submit-form" class="form-btn" type="submit">Отправить</button>
             </form>
-          </div>
+          </div>          
+        </div>
+        <div class="row">
+          <a href="#">Заказать обратный звонок</a>
         </div>
       </div>               
     </footer>
@@ -593,19 +602,20 @@
     <div id="modal-1" class="modal fade" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">ДЛЯ ЗАКАЗА ОСТАВЬТЕ ЗАЯВКУ</h4>
-            <p>и мы перезвоним Вам для уточнения деталей</p>            
-          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <div class="modal-body">
-            <form id="main-form-ajax" action="#">              
-              <input id="userName" type="text" name="username" placeholder="Ваше имя...">
-              <input id="userEmail" type="email" name="useremail" placeholder="Ваш e-mail..."> 
-          </div>             
-          <div class="modal-footer">
-            <button id="submit-form" class="form-btn" type="submit">Оставить заявку</button>
-            </form>
+            <div class="window-header">
+              <h4 class="modal-title">ДЛЯ ЗАКАЗА ОСТАВЬТЕ ЗАЯВКУ</h4>
+              <p>и мы перезвоним Вам для уточнения деталей</p>          
+            </div>
+            <div class="window-form">
+              <form id="main-form-ajax" action="#">              
+                <input id="userName" type="text" name="username" required placeholder="Ваше имя...">
+               <input id="userEmail" type="email" name="useremail" required placeholder="Ваш e-mail..."> 
+                <button id="submit-form" class="form-btn" type="submit">Оставить заявку</button>
+              </form> 
+            </div>                         
+          
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
